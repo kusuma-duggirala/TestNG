@@ -1,0 +1,19 @@
+name: Suite
+parallel: tests
+configFailurePolicy: skip
+parameters: { UserName: kusuma, PassWord: Test123! }
+tests:
+  - name: Test1
+    parallel: tests
+    classes:
+      - TestNGPractice.Parameterization
+
+  - name: Test2
+    parallel: tests
+    classes:
+      - TestNGPractice.Parameterization
+
+  - name: Test3
+    parallel: tests
+    classes:
+      - TestNGPractice.Parameterization

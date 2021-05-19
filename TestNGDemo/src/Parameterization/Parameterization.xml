@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+<test thread-count="5" name="Test1">
+<parameter name="UserName" value="kusuma"/>
+<parameter name="PassWord" value="Test123!"/>
+<!--<parameter name="UserName" value="Mounika"></parameter> --> <!--Only printing 1 value -->
+<!--<parameter name="PassWord" value="Test123!"></parameter> --> 
+   <classes>
+      <class name="Parameterization.Parameterization"/>
+    </classes>
+  </test> <!-- Test -->
+  
+<test thread-count="5" name="Test2">
+<parameter name="UserName" value="Mounika"/> 
+<parameter name="PassWord" value="Test123!"/> 
+   <classes>
+      <class name="Parameterization.Parameterization"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ <test thread-count="5" name="Test3">
+<parameter name="UserName" value="Uday"/> 
+<parameter name="PassWord" value="Test123!"/>
+   <classes>
+      <class name="Parameterization.Parameterization"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

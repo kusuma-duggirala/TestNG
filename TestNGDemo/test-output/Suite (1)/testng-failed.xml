@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (1)]" parallel="tests">
+  <test name="IETest(failed)" parallel="tests">
+    <parameter name="Browser" value="ie"/>
+    <classes>
+      <class name="TestNGPractice.ParallelExecution">
+        <methods>
+          <include name="bringMyDriver" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestNGPractice.ParallelExecution -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="TestNGPractice.ParallelExecution">
+        <methods>
+          <include name="bringMyDriver" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestNGPractice.ParallelExecution -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite (1)] -->
